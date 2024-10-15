@@ -10,13 +10,23 @@ import (
 )
 
 var methods = []string{"GET", "POST", "PUT", "DELETE"}
-var urls = []string{"/index.html", "/about", "/contact", "/info", "/login", "/about/us"}
+var urls = []string{
+	"/index.html",
+	"/about",
+	"/contact",
+	"/info",
+	"/login",
+	"/blog",
+}
 var statuses = []string{"200", "200", "200", "200", "200", "200", "200", "200", "404", "500", "301"}
 var userAgents = []string{
-	"Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
-	"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:91.0)",
-	"Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X)",
+	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+	"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+	"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0",
+	"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0",
+	"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0",
 }
 var referrers = []string{"https://example.com", "https://foobar.org", "-"}
 
