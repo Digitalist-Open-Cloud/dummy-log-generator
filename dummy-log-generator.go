@@ -20,7 +20,6 @@ var userAgents = []string{
 }
 var referrers = []string{"https://example.com", "https://foobar.org", "-"}
 
-// Generate a random IP address
 func randomIP() string {
 	return fmt.Sprintf("%d.%d.%d.%d", rand.Intn(255), rand.Intn(255), rand.Intn(255), rand.Intn(255))
 }
@@ -75,7 +74,6 @@ func main() {
 
 	flag.Parse()
 
-	// Get log format
 	if !strings.EqualFold(*logFormat, "nginx") && !strings.EqualFold(*logFormat, "apache") {
 		fmt.Println("Invalid log format. Please choose either 'nginx' or 'apache'.")
 		return
